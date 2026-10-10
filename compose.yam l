@@ -1,0 +1,8 @@
+services:
+  nexvion-app:
+    build: .
+    image: nexvion-app:1.0
+    container_name: nexvion-container
+    ports:
+      - "8082:80"
+    restart: unless-stopped
